@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>EchoClik</title>
+        <link>https://AlejandroGs13.github.io/echoclikapp/appcast.xml</link>
+        <description>Actualizaciones de EchoClik</description>
+        <language>es</language>
+
+        <!--
+        ============================================================================
+        CÓMO AGREGAR UNA NUEVA VERSIÓN - - junto
+        ============================================================================
+        1. Archive + notarizá tu .app como siempre.
+        2. Comprimí:  ditto -c -k - - sequesterRsrc - -keepParent EchoClik.app EchoClik-1.1.0.zip
+        3. Firmá el zip con Sparkle:
+              ./bin/sign_update EchoClik-1.1.0.zip
+           Te devuelve algo como:  sparkle:edSignature="...." length="123456"
+        4. Subí el .zip como asset de un GitHub Release (tag v1.1.0).
+        5. Copiá un bloque <item> como el de abajo, actualizando:
+              - sparkle:version            → build number (CFBundleVersion), ej. 110
+              - sparkle:shortVersionString → versión visible (CFBundleShortVersionString), ej. 1.1.0
+              - url                        → URL de descarga del .zip en el Release
+              - sparkle:edSignature        → la firma del paso 3
+              - length                     → el length del paso 3 (bytes)
+              - pubDate                    → fecha de publicación
+        6. Commit + push de este archivo. GitHub Pages lo sirve y las apps lo detectan.
+        ============================================================================
+        El <item> más nuevo va ARRIBA. Mantené los viejos para historial de versiones.
+        -->
+
+        <item>
+            <title>Versión 1.1.0</title>
+            <description><![CDATA[
+                <h2>Novedades de la 1.1.0</h2>
+                <ul>
+                    <li>Sistema de actualizaciones automáticas.</li>
+                    <li>Mejoras de rendimiento y correcciones varias.</li>
+                </ul>
+            ]]></description>
+            <pubDate>Mon, 01 Jul 2026 10:00:00 +0000</pubDate>
+            <sparkle:version>110</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/AlejandroGs13/echoclikapp/releases/download/v1.1.0/EchoClik-1.1.0.zip"
+                sparkle:edSignature="PEGAR_FIRMA_EDDSA_DEL_ZIP"
+                length="0"
+                type="application/octet-stream" />
+        </item>
+
+    </channel>
+</rss>
