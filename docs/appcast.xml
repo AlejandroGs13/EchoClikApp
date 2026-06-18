@@ -8,5 +8,29 @@
         <language>es</language>
 
 
+        <item>
+            <title>Versión 1.0.1</title>
+            <description><![CDATA[
+                <h2>Corrección de errores y mejoras</h2>
+                <ul>
+                    <li>Bóveda cifrada con AES-GCM y Touch ID.</li>
+                    <li>Historial de portapapeles con búsqueda y filtros.</li>
+                    <li>OCR automático en imágenes copiadas.</li>
+                    <li>Editor de capturas con anotaciones.</li>
+                    <li>Prueba gratuita de 7 días.</li>
+                </ul>
+            ]]></description>
+            <pubDate>Tue, 17 Jun 2026 11:30:00 +0000</pubDate>
+            <sparkle:version>101</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/AlejandroGs13/EchoClikApp/releases/1.0.1/EchoClik-1.0.1.zip"
+                sparkle:edSignature="PBcaLbanbaDoSb8/V5CRTNf8y+z/4Z6FavP8uiR0rlb3c9z3ZcMuz3YEHqMUPagO9RkTFT8YR2ty9tYGlYreDw=="
+                length="4345151"
+                type="application/octet-stream" />
+        </item>
+
+
     </channel>
 </rss>
